@@ -1,0 +1,26 @@
+[
+	{
+		"file": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Source\\UnrealShooter\\UnrealShooter.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\.vscode\\compileCommands_Default\\UnrealShooter.1.rsp"
+		],
+		"directory": "E:\\EpicGames\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Source\\UnrealShooter\\UnrealShooter.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\.vscode\\compileCommands_Default\\UnrealShooter.1.rsp"
+		],
+		"directory": "E:\\EpicGames\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Source\\UnrealShooter\\UnrealShooter.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\.vscode\\compileCommands_Default\\UnrealShooter.1.rsp"
+		],
+		"directory": "E:\\EpicGames\\UE_5.3\\Engine\\Source"
+	}
+]
