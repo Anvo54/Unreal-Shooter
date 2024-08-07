@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "UnrealShooter",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "E:\\EpicGames\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "UnrealShooter Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Debug",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Debug",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooter Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Debug",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"DebugGame",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"DebugGame",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooter Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"DebugGame",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Development",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Development",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooter Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Development",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Test",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Test",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooter Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Test",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Shipping",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Shipping",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooter Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooter Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooter",
+					"Win64",
+					"Shipping",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"Debug",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"Debug",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooterEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"Debug",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooterEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"Development",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"Development",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealShooterEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealShooterEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealShooterEditor",
+					"Win64",
+					"Development",
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\EpicGames\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch UnrealShooter (Debug)",
+				"request": "launch",
+				"program": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "UnrealShooter Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealShooter (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "UnrealShooter Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealShooter (Development)",
+				"request": "launch",
+				"program": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "UnrealShooter Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealShooter (Test)",
+				"request": "launch",
+				"program": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "UnrealShooter Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealShooter (Shipping)",
+				"request": "launch",
+				"program": "E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "UnrealShooter Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealShooterEditor (Debug)",
+				"request": "launch",
+				"program": "E:\\EpicGames\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "UnrealShooterEditor Win64 Debug Build",
+				"args": [
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject"
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealShooterEditor (DebugGame)",
+				"request": "launch",
+				"program": "E:\\EpicGames\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "UnrealShooterEditor Win64 DebugGame Build",
+				"args": [
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject"
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealShooterEditor (Development)",
+				"request": "launch",
+				"program": "E:\\EpicGames\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "UnrealShooterEditor Win64 Development Build",
+				"args": [
+					"E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject"
+				],
+				"cwd": "E:\\EpicGames\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\EpicGames\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\EpicGames\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "E:\\EpicGames\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=E:\\Dev\\Gamedev\\Unreal\\GameDevtv\\UnrealShooter\\UnrealShooter.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "E:\\EpicGames\\UE_5.3"
+			}
+		]
+	}
+}
