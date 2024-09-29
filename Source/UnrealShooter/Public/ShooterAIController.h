@@ -16,6 +16,8 @@ class UNREALSHOOTER_API AShooterAIController : public AAIController
 
 public:
 	virtual void Tick(float DeltaSeconds) override;
+	UPROPERTY(EditAnywhere)
+	float AcceptanceRadius = 200;
 	
 protected:
 	virtual void BeginPlay() override;
